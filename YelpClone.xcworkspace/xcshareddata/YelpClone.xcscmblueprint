@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EC372C53FB0EACDA5F2E46F0AF0F7DC7151230BA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EC372C53FB0EACDA5F2E46F0AF0F7DC7151230BA" : 0,
+    "C7FE6CBBC110BD522A4119AF6634D3F1FECE3847" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8AE58E93-764F-4F28-A7BD-905978FE9D11",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EC372C53FB0EACDA5F2E46F0AF0F7DC7151230BA" : "YelpClone\/",
+    "C7FE6CBBC110BD522A4119AF6634D3F1FECE3847" : "ios_yelp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YelpClone",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YelpClone.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/theSteveMitchell\/ios_yelp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C7FE6CBBC110BD522A4119AF6634D3F1FECE3847"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/theSteveMitchell\/YelpClone_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EC372C53FB0EACDA5F2E46F0AF0F7DC7151230BA"
+    }
+  ]
+}

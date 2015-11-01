@@ -17,6 +17,7 @@
 		AA1F21141BE699F60061A792 /* BusinessTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F21131BE699F60061A792 /* BusinessTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		AA1F21191BE69FE80061A792 /* YelpBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F21181BE69FE80061A792 /* YelpBusiness.m */; settings = {ASSET_TAGS = (); }; };
 		AA1F211C1BE6A0510061A792 /* YelpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F211B1BE6A0510061A792 /* YelpClient.m */; settings = {ASSET_TAGS = (); }; };
+		AA1F211F1BE6ABA30061A792 /* header_stars.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1F211E1BE6ABA30061A792 /* header_stars.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		AA1F21181BE69FE80061A792 /* YelpBusiness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YelpBusiness.m; sourceTree = "<group>"; };
 		AA1F211A1BE6A0510061A792 /* YelpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YelpClient.h; path = ../ios_yelp/Yelp/YelpClient.h; sourceTree = "<group>"; };
 		AA1F211B1BE6A0510061A792 /* YelpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YelpClient.m; path = ../ios_yelp/Yelp/YelpClient.m; sourceTree = "<group>"; };
+		AA1F211E1BE6ABA30061A792 /* header_stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header_stars.png; path = YelpClone/header_stars.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		AA1F20EF1BE567900061A792 = {
 			isa = PBXGroup;
 			children = (
+				AA1F21201BE6ABA60061A792 /* Assets */,
 				AA1F211D1BE6A0570061A792 /* API */,
 				AA1F21161BE69FC90061A792 /* Models */,
 				AA1F20FA1BE567900061A792 /* YelpClone */,
@@ -124,6 +127,14 @@
 				AA1F211B1BE6A0510061A792 /* YelpClient.m */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		AA1F21201BE6ABA60061A792 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AA1F211E1BE6ABA30061A792 /* header_stars.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		E8E62FDB7067074F071599F7 /* Frameworks */ = {
@@ -194,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1F211F1BE6ABA30061A792 /* header_stars.png in Resources */,
 				AA1F210B1BE567900061A792 /* LaunchScreen.storyboard in Resources */,
 				AA1F21081BE567900061A792 /* Assets.xcassets in Resources */,
 				AA1F21061BE567900061A792 /* Main.storyboard in Resources */,

@@ -34,7 +34,7 @@
                            deals:NO
                       completion:^(NSArray *businesses, NSError *error) {
                           for (YelpBusiness *business in businesses) {
-                              //NSLog(@"%@", business);
+                              NSLog(@"%@", business);
                           }
                           self.businesses = businesses;
                           [self.businessTableView reloadData];
@@ -58,11 +58,20 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BusinessTableViewCell *cell = [self.businessTableView dequeueReusableCellWithIdentifier:@"businessCell"];
+    YelpBusiness *biz = self.businesses[indexPath.row];
     //NSLog(@"%@", [self.businesses[indexPath.row] imageUrl]);
-    cell.nameLabel.text = [self.businesses[indexPath.row] name];
+    cell.nameLabel.text = [biz name];
     
-    NSURL *url = [self.businesses[indexPath.row] imageUrl];
+    NSURL *url = [biz imageUrl];
     [cell.previewImageView setImageWithURL:url];
+    
+    NSURL *rateUrl = [biz ratingImageUrl];
+    [cell.ratingImageView setImageWithURL:rateUrl];
+    
+    cell.distanceLabel.text = [biz distance];
+    cell.addressLabel.text = [biz address];
+    cell.categoryLabel.text = [biz categories];
+                         
 
     return cell;
 
