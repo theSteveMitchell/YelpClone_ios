@@ -9,12 +9,12 @@
 #import "ViewController.h"
 #import "BusinessTableViewCell.h"
 #import "YelpBusiness.h"
-#import "UIImageview+AFNetworking.h"
+
 
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *businessTableView;
-@property NSArray *businesses;
+@property (strong, nonatomic) NSArray *businesses;
 
 @end
 
@@ -33,9 +33,9 @@
                       categories:@[@"burgers"]
                            deals:NO
                       completion:^(NSArray *businesses, NSError *error) {
-                          for (YelpBusiness *business in businesses) {
-                              NSLog(@"%@", business);
-                          }
+                          //for (YelpBusiness *business in businesses) {
+                          //    NSLog(@"%@", business);
+                         // /}
                           self.businesses = businesses;
                           [self.businessTableView reloadData];
                       }];
@@ -58,21 +58,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BusinessTableViewCell *cell = [self.businessTableView dequeueReusableCellWithIdentifier:@"businessCell"];
-    YelpBusiness *biz = self.businesses[indexPath.row];
-    //NSLog(@"%@", [self.businesses[indexPath.row] imageUrl]);
-    cell.nameLabel.text = [biz name];
-    
-    NSURL *url = [biz imageUrl];
-    [cell.previewImageView setImageWithURL:url];
-    
-    NSURL *rateUrl = [biz ratingImageUrl];
-    [cell.ratingImageView setImageWithURL:rateUrl];
-    
-    cell.distanceLabel.text = [biz distance];
-    cell.addressLabel.text = [biz address];
-    cell.categoryLabel.text = [biz categories];
-                         
-
+    cell.business = self.businesses[indexPath.row];
+    //NSLog(@"%@", self.businesses[indexPath.row]);
     return cell;
 
 }

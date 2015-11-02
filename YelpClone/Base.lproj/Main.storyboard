@@ -73,6 +73,7 @@
                                             <outlet property="nameLabel" destination="TPI-FG-a3a" id="iAX-RF-Gj5"/>
                                             <outlet property="previewImageView" destination="mKd-15-ggf" id="dDr-RY-gVy"/>
                                             <outlet property="ratingImageView" destination="cLc-OF-xXq" id="0TC-UB-xP8"/>
+                                            <outlet property="ratingLabel" destination="5wX-1G-TYl" id="iib-H1-cxA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

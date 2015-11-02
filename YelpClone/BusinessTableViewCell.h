@@ -7,13 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YelpBusiness.h"
 
 @interface BusinessTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *previewImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *ratingImageView;
-@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
-@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
-@property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
-
+@property (nonatomic) YelpBusiness *business;
 @end
