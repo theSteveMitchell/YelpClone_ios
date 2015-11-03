@@ -10,6 +10,7 @@
 #import "BusinessTableViewCell.h"
 #import "YelpBusiness.h"
 #import "YelpSearchBar.h"
+#import "FiltersViewController.h"
 
 
 
@@ -27,16 +28,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _filtersButton.frame = CGRectMake(10, 0, 50, 30);
-    //button setTitle:@"Filters" forState:UIControlStateNormal];
-    //button.layer.borderColor = [UIColor whiteColor].CGColor;
-    //button.layer.borderWidth = 0.3f;
-    //button.layer.cornerRadius = 3;
     _filtersButton.clipsToBounds = YES;
-    //[button addTarget:self action:@selector(goToFiltersController) forControlEvents:UIControlEventTouchUpInside];
     _searchBar = [[UISearchBar alloc] init];
     _searchBar.delegate = self;
-    //_searchBar.showsCancelButton = YES;
     [self.searchBar sizeToFit];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Filters" style:UIBarButtonItemStylePlain target:self action:@selector(onFiltersButtonTap)];
+
     self.navigationItem.titleView = _searchBar;
     self.businessTableView.dataSource = self;
     self.businessTableView.delegate = self;
@@ -50,9 +47,6 @@
                       categories:@[@"burgers"]
                            deals:NO
                       completion:^(NSArray *businesses, NSError *error) {
-                          //for (YelpBusiness *business in businesses) {
-                          //    NSLog(@"%@", business);
-                         // /}
                           self.businesses = businesses;
                           [self.businessTableView reloadData];
                       }];
@@ -61,6 +55,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)onFiltersButtonTap{
+    [_searchBar resignFirstResponder];
+     _searchBar.showsCancelButton = NO;
+    FiltersViewController *filtersViewController = [[FiltersViewController alloc] init];
+    //xsfiltersViewController.delegate = self;
+    
+    UINavigationController *filtersViewNavigationController = [[UINavigationController alloc] initWithRootViewController:filtersViewController];
+    [self presentViewController:filtersViewNavigationController animated:YES completion:nil];
 }
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{

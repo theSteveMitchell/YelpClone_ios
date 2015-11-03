@@ -18,6 +18,7 @@
 		AA1F21191BE69FE80061A792 /* YelpBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F21181BE69FE80061A792 /* YelpBusiness.m */; settings = {ASSET_TAGS = (); }; };
 		AA1F211C1BE6A0510061A792 /* YelpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F211B1BE6A0510061A792 /* YelpClient.m */; settings = {ASSET_TAGS = (); }; };
 		AA1F211F1BE6ABA30061A792 /* header_stars.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1F211E1BE6ABA30061A792 /* header_stars.png */; settings = {ASSET_TAGS = (); }; };
+		AA1F26A71BE91BD50061A792 /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F26A61BE91BD50061A792 /* FiltersViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		AA1F211A1BE6A0510061A792 /* YelpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YelpClient.h; path = ../ios_yelp/Yelp/YelpClient.h; sourceTree = "<group>"; };
 		AA1F211B1BE6A0510061A792 /* YelpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YelpClient.m; path = ../ios_yelp/Yelp/YelpClient.m; sourceTree = "<group>"; };
 		AA1F211E1BE6ABA30061A792 /* header_stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header_stars.png; path = YelpClone/header_stars.png; sourceTree = "<group>"; };
+		AA1F26A51BE91BD50061A792 /* FiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersViewController.h; sourceTree = "<group>"; };
+		AA1F26A61BE91BD50061A792 /* FiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				AA1F20FB1BE567900061A792 /* Supporting Files */,
 				AA1F21121BE699F60061A792 /* BusinessTableViewCell.h */,
 				AA1F21131BE699F60061A792 /* BusinessTableViewCell.m */,
+				AA1F26A51BE91BD50061A792 /* FiltersViewController.h */,
+				AA1F26A61BE91BD50061A792 /* FiltersViewController.m */,
 			);
 			path = YelpClone;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1F26A71BE91BD50061A792 /* FiltersViewController.m in Sources */,
 				AA1F21031BE567900061A792 /* ViewController.m in Sources */,
 				AA1F21141BE699F60061A792 /* BusinessTableViewCell.m in Sources */,
 				AA1F211C1BE6A0510061A792 /* YelpClient.m in Sources */,

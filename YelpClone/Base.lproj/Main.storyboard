@@ -141,31 +141,19 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="IdG-5z-kfn">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="dOw-MJ-Lpq">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Eck-it-van">
-                                <rect key="frame" x="20" y="7" width="133" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Filters"/>
-                                <connections>
-                                    <segue destination="Ikw-9M-kLy" kind="show" id="vhv-ld-gWq"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="IdG-5z-kfn"/>
                     <connections>
                         <outlet property="businessTableView" destination="tMm-dX-wh3" id="7Mg-Dd-Thq"/>
-                        <outlet property="filtersButton" destination="Eck-it-van" id="Ro8-i8-opI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1116" y="429"/>
         </scene>
-        <!--View Controller-->
+        <!--Filters View Controller-->
         <scene sceneID="G0P-gH-mvg">
             <objects>
-                <viewController modalTransitionStyle="partialCurl" modalPresentationStyle="pageSheet" id="Ikw-9M-kLy" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="partialCurl" modalPresentationStyle="pageSheet" id="Ikw-9M-kLy" customClass="FiltersViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PvN-DE-uL0"/>
                         <viewControllerLayoutGuide type="bottom" id="JZI-Hg-GNx"/>
@@ -173,7 +161,27 @@
                     <view key="view" contentMode="scaleToFill" id="ahL-tR-N1X">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NeO-Sg-WLD">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                </variation>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NeO-Sg-WLD"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NeO-Sg-WLD"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUb-Hx-BRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
