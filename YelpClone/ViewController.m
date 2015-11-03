@@ -37,6 +37,9 @@
     self.navigationItem.titleView = _searchBar;
     self.businessTableView.dataSource = self;
     self.businessTableView.delegate = self;
+    
+    self.businessTableView.estimatedRowHeight = 160;
+    self.businessTableView.rowHeight = UITableViewAutomaticDimension;
     _searchTerm = @"";
     [self fetchBusinesses];
 }
@@ -75,9 +78,6 @@
     // trigger fetch when search tem is 3 or more characters.
     // But if there was a previous search, we trigger fetch to clear filtering.
     int previousTermCancelled = (![searchText containsString:_searchTerm] && _searchTerm.length > 0);
-    NSLog(@"contains: %d", previousTermCancelled);
-    NSLog(@"old: %@", _searchTerm);
-    NSLog(@"new: %@", searchText);
     
     _searchTerm = searchText;
     if (_searchTerm.length >= 3 || previousTermCancelled)

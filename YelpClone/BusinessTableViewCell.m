@@ -23,7 +23,6 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    NSLog(@"awakeFromNib");
     self.previewImageView.layer.cornerRadius = 10.0f;
     self.previewImageView.clipsToBounds = YES;
 }
@@ -36,8 +35,11 @@
 
 - (void)setBusiness:(YelpBusiness *)business {
     _business = business;
-    //NSLog(@"%@", [self.businesses[indexPath.row] imageUrl]);
+
+    NSLog(@"%@", business);
     self.nameLabel.text = [_business name];
+    //self.nameLabel.preferredMaxLayoutWidth = self.nameLabel.frame.size.width;
+    [self.nameLabel sizeToFit];
     
     NSURL *url = [_business imageUrl];
     [self.previewImageView setImageWithURL:url];
