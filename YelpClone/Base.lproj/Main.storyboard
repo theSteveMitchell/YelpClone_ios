@@ -237,44 +237,6 @@
             </objects>
             <point key="canvasLocation" x="1116" y="429"/>
         </scene>
-        <!--Filters View Controller-->
-        <scene sceneID="G0P-gH-mvg">
-            <objects>
-                <viewController modalTransitionStyle="partialCurl" modalPresentationStyle="pageSheet" id="Ikw-9M-kLy" customClass="FiltersViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PvN-DE-uL0"/>
-                        <viewControllerLayoutGuide type="bottom" id="JZI-Hg-GNx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ahL-tR-N1X">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NeO-Sg-WLD">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-8" y="0.0" width="400" height="600"/>
-                                </variation>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="NeO-Sg-WLD"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="NeO-Sg-WLD"/>
-                            </mask>
-                        </variation>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JUb-Hx-BRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1917" y="429"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="RmT-MX-6ih">
             <objects>
@@ -283,7 +245,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="atf-gs-t1M">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.6705882353" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.6705882352941176" green="0.0" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

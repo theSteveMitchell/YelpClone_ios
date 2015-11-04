@@ -8,6 +8,14 @@
 
 #import "ViewController.h"
 
-@interface FiltersViewController : ViewController
+@class FiltersViewController;
 
+@protocol FiltersViewControllerDelegate <NSObject>
+
+- (void)FiltersViewController:(FiltersViewController *)filtersViewController didChangeFilters:(NSDictionary *)filters;
+
+@end
+
+@interface FiltersViewController : ViewController
+@property (weak, nonatomic) id<FiltersViewControllerDelegate> delegate;
 @end

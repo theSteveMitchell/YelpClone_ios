@@ -14,7 +14,7 @@
 
 
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, FiltersViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *businessTableView;
 @property (strong, nonatomic) NSArray *businesses;
 @property (strong, nonatomic) NSString *searchTerm;
@@ -64,7 +64,7 @@
     [_searchBar resignFirstResponder];
      _searchBar.showsCancelButton = NO;
     FiltersViewController *filtersViewController = [[FiltersViewController alloc] init];
-    //xsfiltersViewController.delegate = self;
+    filtersViewController.delegate = self;
     
     UINavigationController *filtersViewNavigationController = [[UINavigationController alloc] initWithRootViewController:filtersViewController];
     [self presentViewController:filtersViewNavigationController animated:YES completion:nil];
@@ -111,6 +111,10 @@
     //NSLog(@"%@", self.businesses[indexPath.row]);
     return cell;
 
+}
+
+- (void)FiltersViewController:(FiltersViewController *)filtersViewController didChangeFilters:(NSDictionary *)filters {
+    NSLog(@"Filters Changed");
 }
 
 @end
